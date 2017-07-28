@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Information about Spiders</title>
+    <link rel="stylesheet" href="http://dev.scrapinghub.com/~david/demos/assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://dev.scrapinghub.com/~david/demos/assets/style.css" />
+</head>
+
+<body style="font-size: 2em;">
+    <div class="container">
+        <div class="thumbnail pull-right flag">
+            <img src="http://dev.scrapinghub.com/~david/demos/assets/spider.png" alt="A spider" />
+            <div class="caption">
+                <h3>A spider</h3>
+            </div>
+        </div>
+        <h1>Information about Spiders</h1>
+
+        <form style="width: 40%;">
+          <div class="form-group">
+            <label for="lang">In what language do you want your spider information?</label>
+            <select id="lang" class="form-control">
+                <option>Spanish</option>
+                <option>English</option>
+                <option>French</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>What do you want to know about spiders?</label>
+          </div>
+            <div class="checkbox"><label><input id="question1" type="checkbox">Why do spiders bite?</label></div>
+            <div class="checkbox"><label><input id="question2" type="checkbox">Why do spiders make webs?</label></div>
+            <div class="checkbox"><label><input id="question3" type="checkbox">Why do spiders have 8 eyes?</label></div>
+            <div class="form-group">
+              <label for="filter">Filter information</label>
+              <input type="text" id="filter" class="form-control" />
+              <p class="help-block">We won't show you information with this keywords.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Load spider information</button>
+        </form>
+        <div style="display:none;" id="loading" class="alert alert-info">Loading...</div>
+        <p style="display:none;">Spiders (order Araneae) are air-breathing arthropods that have eight legs and chelicerae with fangs that inject venom. They are the largest order of arachnids and rank seventh in total species diversity among all other orders of organisms.[1] Spiders are found worldwide on every continent except for Antarctica, and have become established in nearly every habitat with the exceptions of air and sea colonization. As of 2008, at least 43,678 spider species,[2] and 109 families have been recorded by taxonomists;[3] however, there has been dissension within the scientific community as to how all these families should be classified, as evidenced by the over 20 different classifications that have been proposed since 1900.[4]</p>
+        <p style="display:none;">Anatomically, spiders differ from other arthropods in that the usual body segments are fused into two tagmata, the cephalothorax and abdomen, and joined by a small, cylindrical pedicel. Unlike insects, spiders do not have antennae. In all except the most primitive group, the Mesothelae, spiders have the most centralized nervous systems of all arthropods, as all their ganglia are fused into one mass in the cephalothorax. Unlike most arthropods, spiders have no extensor muscles in their limbs and instead extend them by hydraulic pressure.</p>
+        <p style="display:none;">Their abdomens bear appendages that have been modified into spinnerets that extrude silk from up to six types of silk glands within their abdomen. Spider webs vary widely in size, shape and the amount of sticky thread used. It now appears that the spiral orb web may be one of the earliest forms, and spiders that produce tangled cobwebs are more abundant and diverse than orb-web spiders. Spider-like arachnids with silk-producing spigots appeared in the Devonian period about 386 million years ago, but these animals apparently lacked spinnerets. True spiders have been found in Carboniferous rocks from 318 to 299 million years ago, and are very similar to the most primitive surviving order, the Mesothelae. The main groups of modern spiders, Mygalomorphae and Araneomorphae, first appeared in the Triassic period, before 200 million years ago.</p>
+    </div>
+    <script src="../assets/jquery.min.js"></script>
+    <script src="../assets/spider.js"></script>
+</body>
+</html>

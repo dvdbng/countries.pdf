@@ -1,0 +1,13 @@
+/* line 2, style.scss */
+.flag {
+  max-width: 450px;
+}
+
+/* line 6, style.scss */
+form {
+  margin: 10px;
+}
+/* line 8, style.scss */
+form select {
+  margin-right: 10px;
+}

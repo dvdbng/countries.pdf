@@ -1,0 +1,25 @@
+<style>
+    body{ font-family: sans-serif; }
+</style>
+
+<h1>Countries.pdf</h1>
+<img src="/static/shoot.png" alt="countries.pdf example" style="transform: rotate(-10deg); margin: 30px; width: 500px; float: right; border: 5px solid red;" />
+<p> A complete list of countries with useful information like visa and vaccines. It includes personalized visa requirements, obligatory and recommended vaccines (vaccines in <strong>bold</strong> are obligatory), capital city, official languages and calling codes. Keep the list in your phone when travelling. </p>
+
+<p> To get it select your passport nationality and enter an e-mail address you can check on your smartphone. </p>
+
+<form action="/subscribe" method="post">
+    <select name="nationality">
+        <option value="">Select your nationality</option>
+        {% for code, name in countries %}
+        <option value="{{code}}">{{name}}</option>
+        {% endfor %}
+    </select>
+    <input type="email" name="email" placeholder="Your e-mail"/>
+    <input type="submit" value="Send me countries.pdf">
+
+</form>
+
+<p> LPT: If you have a Kindle, forward the e-mail to [amazon-username]@kindle.com to have it in your kindle too!</p>
+
+<p style="font-size: 0.6em; color: #666;"> Made with &lt;3 in my free time while traveling in Namibia and Spain by <a href="http://dvdbng.com">David Bengoa</a></p>
